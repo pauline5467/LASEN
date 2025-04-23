@@ -1,0 +1,353 @@
+/* Réinitialisation de quelques styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Fond gris clair pour la page */
+    color: #333; /* Texte principal plus foncé pour un meilleur contraste */
+    line-height: 1.6;
+    text-align: center; /* Centre tout le texte par défaut */
+}
+
+/* En-tête */
+header {
+    background-color: #6a1b9a; /* Violet foncé */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    margin-bottom: 15px; /* Espace entre le logo et le titre */
+}
+
+header .logo img {
+    max-width: 150px; /* Taille maximale du logo */
+    height: auto;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ab47bc; /* Violet plus clair pour le survol */
+}
+
+/* Section générique */
+.section {
+    padding: 40px 20px;
+    margin: 30px 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #6a1b9a; /* Violet foncé pour les titres */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    color: #555; /* Texte des paragraphes en gris foncé pour un meilleur contraste */
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Section horaires */
+#horaires ul {
+    font-size: 1.1rem;
+}
+
+#horaires li {
+    margin: 10px 0;
+}
+
+/* Section des pins */
+.pins-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 35px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Carte des pin's */
+.pin {
+    background-color: white;
+    width: 280px;  /* Taille uniforme pour toutes les cartes */
+    height: 400px; /* Hauteur fixe */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Équilibre les éléments */
+}
+
+/* Centrage de l'image */
+.pin img {
+    width: 120px;  /* Taille plus petite */
+    height: 120px;
+    object-fit: cover;  /* Coupe et adapte l'image */
+    margin: 0 auto 15px; /* Centre l'image */
+    display: block;
+}
+
+/* Titre du pin */
+.pin h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #6a1b9a;
+}
+
+/* Description et détails */
+.pin p {
+    font-size: 0.95rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+/* Style de la barre de recherche */
+.search-bar {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 600px; /* Limiter la largeur pour ne pas occuper toute la largeur */
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 80%; /* L'input occupe 80% de la largeur */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #ab47bc;
+}
+
+/* Footer */
+footer {
+    background-color: #6a1b9a; /* Violet foncé pour le fond */
+    color: white;
+    text-align: center;
+    padding: 20px 10px; /* Espacement autour du footer */
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour séparer du contenu */
+}
+
+/* Section contact dans le footer */
+footer #contact {
+    margin-top: 20px;
+    padding: 20px; /* Ajouter du padding pour mieux espacer le contenu */
+}
+
+/* Titre de la section contact */
+footer #contact h2 {
+    font-size: 2rem; /* Taille de titre plus grande */
+    color: #6a1b9a;     /* Titre en blanc */
+    margin-bottom: 15px; /* Marge pour espacer du texte */
+}
+
+/* Texte des paragraphes */
+footer #contact p {
+    font-size: 1.1rem; /* Taille de texte plus grande pour la lisibilité */
+    color: #333;    /* Texte en gris clair pour contraster avec le fond foncé */
+}
+
+footer #contact a {
+    color: #6a1b9a;     /* Liens en gris clair */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer #contact a:hover {
+    color: #ab47bc; /* Rendre les liens plus lumineux au survol */
+}
+
+/* Ajout d'un effet d'ombre aux sections */
+.section:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* About Section */
+.about-section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-section a {
+    color: #6a1b9a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    color: #ab47bc;
+}
+
+/* Team Section */
+.team-section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    color: #6a1b9a;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive pour mobile */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .pins-container {
+        grid-template-columns: 1fr;
+    }
+
+    .pin {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .pin h2 {
+        font-size: 1.2rem;
+    }
+
+    .pin p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .pin h2 {
+        font-size: 1rem;
+    }
+
+    .pin p {
+        font-size: 0.9rem;
+    }
+}

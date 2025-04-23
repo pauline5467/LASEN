@@ -1,0 +1,276 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    background-color: #fdf6e3; 
+    color: #333; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    background-color: #ffcc00; 
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+    .nav-links a {
+        text-decoration: none;
+        color: #007bff; 
+        font-weight: bold;
+        font-size: 2rem;
+        border-bottom: 2px dashed #ff5733
+    }
+
+        .nav-links a:hover {
+            color: #ff5733;
+        }
+
+/* Hero Section */
+.hero {
+    background-image: url('fond.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+    .hero h2 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+.btn-play {
+    background-color: #ff5733;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 20px; 
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .btn-play:hover {
+        background-color: #c70039;
+    }
+
+/* Footer Section */
+footer {
+    background-color: #ffcc00; 
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+    footer p {
+        font-size: 1rem;
+        color: #333;
+    }
+
+/* Games Section */
+.games {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fdf6e3; /* légère touche pour faire ressortir les cartes */
+}
+
+.games h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #ff5733;
+    font-weight: bold;
+}
+
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.game-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.game-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333; 
+}
+
+.game-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Team Section */
+
+
+.team-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.team-member {
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+    .team-member:hover {
+        transform: scale(1.05);
+    }
+
+    .team-member img {
+        width: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        color: #ff5733;
+    }
+
+    .team-member p {
+        font-size: 1rem;
+        color: #007bff; 
+    }
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .contact-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-section p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border: 2px solid #ff5733; 
+        border-radius: 10px; 
+        background-color: #ffffff; 
+        color: #333; 
+    }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #aaa; 
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #007bff;
+        }
+
+.btn-submit {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+    .btn-submit:hover {
+        background-color: #0056b3;
+    }
+
+
